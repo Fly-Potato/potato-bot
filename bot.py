@@ -18,8 +18,8 @@ app = nonebot.get_asgi()
 
 driver = nonebot.get_driver()
 
-nonebot.load_plugins("src/plugins")
-nonebot.load_plugins("")
+nonebot.load_plugins("src/plugins/laisha2")
+nonebot.load_plugins("nonebot_plugin_test")
 
 # Modify some config / config depends on loaded configs
 # 

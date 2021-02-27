@@ -1,7 +1,7 @@
 # potato-bot
 
-## How to start
+### 环境
+框架：
+[nonebot2](https://github.com/nonebot/nonebot2)
 
-1. generate project using `nb create` .
-2. writing your plugins under `src/plugins` folder.
-3. run your bot using `nb run` .
+Python： 3.8.5
