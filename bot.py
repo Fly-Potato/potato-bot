@@ -23,7 +23,7 @@ driver.register_adapter("cqhttp", CQHTTPBot)
 nonebot.load_plugins("src/plugins")
 # nb plugin install nonebot_plugin_test
 # 前端测试插件
-nonebot.load_plugin("nonebot_plugin_test")
+# nonebot.load_plugin("nonebot_plugin_test")
 
 # Modify some config / config depends on loaded configs
 # 
