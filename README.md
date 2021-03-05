@@ -5,3 +5,20 @@
 [nonebot2](https://github.com/nonebot/nonebot2)
 
 Python： 3.8.5
+
+### 使用说明
+- 修改.env配置
+  
+  `ENVIRONMENT=prod`
+- 若使用自己搭建的datacenter服务器，需要修改.env.prod
+  `DATACENTER=http://xxxxx.com`
+  
+- 安装环境依赖
+
+  `pip install -r requirements.txt`
+- 启动
+  
+  `python bot.py`
+
+### 模块说明
+laisha2 -- 莱莎2
