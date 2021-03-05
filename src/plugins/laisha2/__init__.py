@@ -1,7 +1,9 @@
+import nonebot
 from nonebot import on_command
 from nonebot.rule import to_me
 from nonebot.typing import T_State
 from nonebot.adapters import Bot, Event
+from nonebot.config import Config
 import httpx
 import json
 
@@ -26,7 +28,8 @@ async def handle_name(bot: Bot, event: Event, state: T_State):
 
 async def get_material(name: str):
     async with httpx.AsyncClient() as client:
-        res = await client.get(f"http://127.0.0.1:8002/botdata/laisha2/material/?name={name}")
+        driver = nonebot.get_driver()
+        res = await client.get(driver.config.datacenter + f"/api/laisha2/?method=get_material_info&name={name}")
         material_list = list()
         for material_info in json.loads(res.text)['materials']:
             material_list.append(f"名称:{material_info['name']}, 类型: {material_info['type']}, 地区:{material_info['addr']}")
