@@ -11,6 +11,7 @@ Python： 3.8.5
   
   `ENVIRONMENT=prod`
 - 若使用自己搭建的datacenter服务器，需要修改.env.prod
+  
   `DATACENTER=http://xxxxx.com`
   
 - 安装环境依赖
