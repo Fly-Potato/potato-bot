@@ -16,4 +16,4 @@ if '角色攻略' in table1.th.text:
         print(WIKI_HOST + li.a['href'])
 
 for table in tables[1:]:
-    pass
+    print(table.text)
